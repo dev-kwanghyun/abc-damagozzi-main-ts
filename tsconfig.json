@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    // 기본 환경
+    "target": "ESNext", // 최신 JS 문법 사용
+    "module": "ESNext", // import/export 사용
+    "moduleResolution": "node", // 모듈 해석 방식
+    "lib": ["ESNext", "DOM"],
+    "types": ["chrome", "node"], // 타입 정의
+
+    // 출력
+    "outDir": "dist", // 컴파일 결과 폴더
+    "sourceMap": false, // 소스맵 사용 안함
+    "declaration": false, // 타입 선언 파일 생성 안함
+
+    // 타입체크
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // 모듈 호환
+    "esModuleInterop": true, // CommonJS 모듈도 import 가능
+    "allowSyntheticDefaultImports": true,
+
+    // 기타
+    "isolatedModules": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}
