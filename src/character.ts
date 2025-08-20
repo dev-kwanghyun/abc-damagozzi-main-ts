@@ -6,7 +6,7 @@ class Character {
   img = document.createElement("img");
 
   // 상태 관리 변수
-  state = "walk";
+  state: StateType = "walk";
 
   // 현재 위치
   position = 0;
